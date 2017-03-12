@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css"/>
+		<script src="lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+		*{margin: 0px;padding:0px;box-sizing: border-box;}
+		body{background-color:#EEEEEE;}
+			.red{background-color:#E50012;}
+			.z_cp{width: 50%;float: left;padding: 4px 0 0 4px;}
+			.z_zt img{width: 100%;}
+			.backtop{display: none;z-index: 5;border: 1px solid;width: 40px;height: 40px;text-align: center;line-height: 40px;border-radius: 40px;position: fixed;bottom: 60px;right: 0px;background-color: #7C7C7C;color: white;}
+			.topgwc{z-index: 5;border: 1px solid;width: 40px;height: 40px;text-align: center;line-height: 40px;border-radius: 40px;position: fixed;bottom:100px;right: 0px;background-color:#E37676;color: white;}
+			.z_cp label{font-size: 14px;color: #B1B1B1;text-indent: 1em;}
+			.z_cp hr{margin-top: 10px;}
+			.gwc{color: red;float: right;}
+			.z_cpn{background-color: white;}
+			.z_zt{margin: 0px auto;max-width: 640px;min-width: 300px;margin-bottom: 10px;}
+			.csgst{border: 20px solid red;position: fixed;}
+			.gwccss{position:fixed;border: 100px solid green;z-index: 4;margin-top:50px ;}
+			.z_cp span{color: red;font-size: 18px;font-weight: bolder;}
+		</style>
+	</head>
+	<body><div class="weui_tab">
+  <div class="weui_tab_bd">
+  	<div class="backtop"><i class="iconfont">&#xe6d6;</i></div>
+  	<a href="gouwuche.html"><div class="topgwc"><i class="iconfont">&#xe670;</i></div></a>
+  	<script type="text/javascript">
+				$(function(){
+					$(".backtop").click(function(){
+						
+						$(document.body).animate({
+							scrollTop: 0
+						},1000)
+						$(".backtop").delay(1000).fadeOut(100)
+					})
+					$(window).scroll(function(){
+						var z_msz = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+						if(z_msz>500){
+							$(".backtop").css({"display":"block"})
+						}else{
+							$(".backtop").css({"display":"none"})
+						}
+					})
+				})
+			</script>
+		<div class="weui_search_bar red" id="search_bar">
+			<div><img src="img/logo.png" height="25px"/></div>
+		<form class="weui_search_outer" style="margin-left: 10px;">
+			<div class="weui_search_inner">
+				<i class="weui_icon_search"></i>
+				<input type="search" class="weui_search_input" placeholder="搜索" id="search_input" required/>
+				<a href="javascript:;" class="weui_icon_clear" id="search_clear"></a>
+			</div>
+			<label class="weui_search_text" id="search_text" style="text-align: left;padding-left: 3px;">
+			<i class="weui_icon_search"></i>
+			<span><img src="img/lp_sch_txt.png" height="25px"/></span>	
+			</label>		
+		</form>
+		<a href="javascript:;" class="weui_search_cancel" id="search_cancel">取消</a>
+		</div>
+		<script type="text/javascript">
+		$(function(){
+			$(".swiper-container").swiper({
+        loop: true,
+        autoplay: 5000
+      });
+		})
+		</script>
+		<div class="red"><a href="fenlei.html"><img src="demos/images/icon_nav_cell.png" width="25px"/></a></div>
+	<div id="top"></div>
+	<div class="z_zt">
+		<div>
+			<div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="img/CghmQ1eO6LaAKNGeAAImLXZsakk583.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/index02.jpg" alt=""></div>
+  </div>
+</div>
+			
+			
+			
+		</div>
+		<div style="margin-top: 20px;margin-bottom: 5px;">
+			<img src="img/CghmQleO8rmAACsoAABVtC0bhro199.jpg"/>
+		</div>
+		<div>
+			<img src="img/CghmQleO6naAM3dkAACZ1Ig5yXA952.jpg"/>
+		</div>
+		<div style="overflow: hidden;">
+		<div class="z_cp">
+			<div class="z_cpn">
+			<img src="img/CghmQ1diG-GAS3ANAAAy6LS_lpA619.jpg"/>
+			<p><label>山椒凤爪(198克)</label></p>
+			<hr />
+			<p><span>￥14.9</span><a href="javascript:;" class="gwc" onclick="create(this)"><i class="iconfont">&#xe670</i></a></p><div class="gwccss"></div>		
+			</div></div>
+			<script type="text/javascript">
+			</script>
+		<div class="z_cp">
+			<div class="z_cpn">
+			<img src="img/CghmQ1diG-GAS3ANAAAy6LS_lpA619.jpg"/>
+			<p><label>山椒凤爪(198克)</label></p>
+			<hr />
+			<p><span>￥14.9</span></p>
+		</div></div>
+		<div class="z_cp">
+			<div class="z_cpn">
+			<img src="img/CghmQ1diG-GAS3ANAAAy6LS_lpA619.jpg"/>
+			<p><label>山椒凤爪(198克)</label></p>
+			<hr />
+			<p><span>￥14.9</span></p>
+		</div></div>
+		<div class="z_cp">
+			<div class="z_cpn">
+			<img src="img/CghmQ1diG-GAS3ANAAAy6LS_lpA619.jpg"/>
+			<p><label>山椒凤爪(198克)</label></p>
+			<hr />
+			<p><span>￥14.9</span></p>
+		</div></div>
+		<div class="z_cp">
+			<div class="z_cpn">
+			<img src="img/CghmQ1diG-GAS3ANAAAy6LS_lpA619.jpg"/>
+			<p><label>山椒凤爪(198克)</label></p>
+			<hr />
+			<p><span>￥14.9</span></p>
+		</div></div></div>
+				<div style="margin-top: 10px;">
+					
+			<img src="img/CghmQ1eO6n2AVRnpAACdTF_HEpk404.jpg"/>
+		</div>
+		<div style="overflow: hidden;">
+		<div class="z_cp">
+			<div class="z_cpn">
+			<img src="img/CghmQ1diG-GAS3ANAAAy6LS_lpA619.jpg"/>
+			<p><label>山椒凤爪(198克)</label></p>
+			<hr />
+			<p><span>￥14.9</span></p>
+		</div></div>
+		<div class="z_cp">
+			<div class="z_cpn">
+			<img src="img/CghmQ1diG-GAS3ANAAAy6LS_lpA619.jpg"/>
+			<p><label>山椒凤爪(198克)</label></p>
+			<hr />
+			<p><span>￥14.9</span></p>
+		</div></div>
+		<div class="z_cp">
+			<div class="z_cpn">
+			<img src="img/CghmQ1diG-GAS3ANAAAy6LS_lpA619.jpg"/>
+			<p><label>山椒凤爪(198克)</label></p>
+			<hr />
+			<p><span>￥14.9</span></p>
+		</div></div>
+		<div class="z_cp">
+			<div class="z_cpn">
+			<img src="img/CghmQ1diG-GAS3ANAAAy6LS_lpA619.jpg"/>
+			<p><label>山椒凤爪(198克)</label></p>
+			<hr />
+			<p><span>￥14.9</span></p>
+		</div></div>
+		</div>
+		
+		</div>
+  <div class="weui_tabbar" style="position: fixed;">
+    <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
+      <div class="weui_tabbar_icon">
+        <img src="demos/images/icon_nav_calendar.png" alt="">
+      </div>
+      <p class="weui_tabbar_label">首页</p>
+    </a>
+    <a href="javascript:;" class="weui_tabbar_item" id="z_fl">
+      <div class="weui_tabbar_icon">
+        <img src="demos/images/icon_nav_article.png" alt="">
+      </div>
+      <p class="weui_tabbar_label">分类</p>
+    </a>
+    <script type="text/javascript">
+    	$("#z_fl").click(function(){
+    		$.actions({
+  actions: [{
+    text: "坚果炒货",
+    onClick: function() {
+      //do something
+    }
+  },{
+    text: "肉脯鱼干",
+    onClick: function() {
+      //do something
+    }
+  },
+  {
+    text: "果干果脯",
+    onClick: function() {
+      //do something
+    }
+  },
+  {
+    text: "糕点糖果",
+    onClick: function() {
+      //do something
+    }
+  },
+  {
+    text: "素食山珍",
+    onClick: function() {
+      //do something
+    }
+  }]
+});
+    	})
+    </script>
+    <a href="gouwuche.html" class="weui_tabbar_item">
+      <div class="weui_tabbar_icon">
+        <img src="demos/images/icon_nav_toast.png" alt="">
+      </div>
+      <p class="weui_tabbar_label">购物车</p>
+    </a>
+    <a href="my.html" class="weui_tabbar_item">
+      <div class="weui_tabbar_icon">
+        <img src="demos/images/icon_nav_tab.png" alt="">
+      </div>
+      <p class="weui_tabbar_label">我的良品</p>
+    </a>
+  </div>
+  <div style="text-align: center;">
+  	
+  	<p><a href="login.html">登录|</a><a href="reg.html">注册|</a><a href="#">反馈|</a><a href="#top">回到顶部</a></p>
+  	<p><i class="iconfont">&#xe708;</i>触屏版&nbsp;&nbsp;<i class="iconfont">&#xe64f;</i>电脑版</p>
+  </div>
+</div>
+<script type="text/javascript">
+	function create(t){
+		var red=document.createElement("div")
+		red.className="csgst"
+		red.innerHTML="1156546464"
+		t.appendChild(red)
+	}
+</script>
+</body>
+</html>

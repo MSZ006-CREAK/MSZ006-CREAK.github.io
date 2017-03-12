@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+				<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css"/>
+		<script src="lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<style type="text/css">
+		#top{margin-top: 0px;font-size: 20px;}
+		.z_body{text-align: center;margin: 0px auto;min-width: 300px;max-width: 600px;height: 500px;margin-top: 50px;}
+		.z_body img{width: 140px;}
+		.z_at{background-color: #DEDEDE;color: #A3A3A3;}
+		.z_cz a{color:#005EA7;}
+		.z_cz{width: 100%;text-align: left;font-size: 14px;margin-top: 20px;}
+		.z_cz span a{color: red;}
+		.z_cz label{float: right;}
+		.z_cz label a{color: #999999;}
+		.z_tr{width: 100%;height: 60px;margin-top: 40px;}
+		.z_tr a{color: #999999;}
+		.z_trt{margin-top: 50px;}
+		.z_trt p{border-top: 1px solid;line-height: 1px;color:#999999;}
+		.z_trt p span{background-color: white;}
+		#z_focus {
+			border: 1px solid #999999;
+			border-radius: 5px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	</style>
+	<body>
+		<div class="weui_cells weui_cells_access" id="top">
+  <a class="weui_cell" href="javascript:;">
+    <div class="weui_cell_hd">
+      <img src="" alt="icon" style="width:20px;margin-right:5px;display:block">
+    </div>
+    <div class="weui_cell_bd weui_cell_primary" style="text-align: center;">
+      <p style="margin-right: 40px;">登录</p>
+    </div>
+  </a>
+</div>
+<div class="z_body">
+	<div>
+	<img src="img/logo_login.png"/></div>
+
+  <div class="weui_cell" id="z_focus">
+    <div class="weui_cell_hd"><label class="weui_label"><i class="iconfont">&#xe60d</i></label></div>
+    <div class="weui_cell_bd weui_cell_primary">
+      <input class="weui_input" type="tel" placeholder="用户名/手机号">
+    </div>
+    
+  </div>
+    <div class="weui_cell"  id="z_focus">
+    <div class="weui_cell_hd"><label class="weui_label"><i class="iconfont">&#xe63f;</i></label></div>
+    <div class="weui_cell_bd weui_cell_primary">
+      <input class="weui_input" type="password" placeholder="登录密码" id="pwd" onkeyup="change()">
+    </div>
+    
+  </div>
+  <a href="javascript:;" class="weui_btn weui_btn_plain_default z_at" id="z_at">按钮</a>
+  <div class="z_cz"><p><span><a href="">快速注册</a></span><a href="">已有会员卡，我要激活</a><label><a href="">找回密码</a></label></p></div>
+  <div class="z_trt"><p><span>第三方账号快速登录</span></p></div>
+  <div class="z_tr">
+  	<div style="float: left;"><a href="">QQ登录</a></div>
+  	<div style="float: right;"><a href="">支付宝登录</a></div>
+  	<div><a href="">微博登录</a></div>
+  </div>
+	<script type="text/javascript">
+    	function change(){
+    		var pwd=document.getElementById("pwd")
+    		var gg=document.getElementById("z_at")
+    		if(pwd.value!=""){
+    			gg.className="weui_btn"+" "+"weui_btn_warn"
+    		}else{
+    			gg.className="weui_btn"+" "+"weui_btn_plain_default"+" "+"z_at"
+    		}
+    	}
+    </script>
+	</body>
+</html>

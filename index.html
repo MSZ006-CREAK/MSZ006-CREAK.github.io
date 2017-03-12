@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="lib/weui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css"/>
+		<script src="lib/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-weui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+<style type="text/css">
+	.red{color: red;}
+	.blue{background-color: blue;}
+</style>
+	<body>
+		<div class="weui_search_bar" id="search_bar">
+		<form class="weui_search_outer">
+			<div class="weui_search_inner">
+				<i class="weui_icon_search"></i>
+				<input type="search" class="weui_search_input" placeholder="搜索" id="search_input" required />
+				<a href="javascript:;" class="weui_icon_clear" id="search_clear"></a>
+			</div>
+			<label class="weui_search_text" id="search_text" style="text-align: left;padding-left: 3px;">
+			<i class="weui_icon_search"></i>
+			<span>搜索</span>	
+			</label>
+			
+		</form>
+		<a href="javascript:;" class="weui_search_cancel" id="search_cancel">取消</a>
+	</div>
+		<div class="weui_grids">
+			<a href="javascript:;" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_label">
+					<img src="demos/images/icon_nav_button.png"/>
+				</div>
+				<p class="weui_grid_label">
+					2333
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_label">
+					<img src="demos/images/icon_nav_cell.png"/>
+				</div>
+				<p class="weui_grid_label">
+					2333
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_label">
+					<img src="demos/images/icon_nav_cell.png"/>
+				</div>
+				<p class="weui_grid_label">
+					2333
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_label">
+					<img src="demos/images/icon_nav_toast.png"/>
+				</div>
+				<p class="weui_grid_label">
+					2333
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_label">
+					<img src="demos/images/icon_nav_dialog.png"/>
+				</div>
+				<p class="weui_grid_label">
+					2333
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_label">
+					<img src="demos/images/icon_nav_progress.png"/>
+				</div>
+				<p class="weui_grid_label">
+					2333
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_label">
+					<img src="demos/images/icon_nav_msg.png"/>
+				</div>
+				<p class="weui_grid_label">
+					2333
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_label">
+					<img src="demos/images/icon_nav_article.png"/>
+				</div>
+				<p class="weui_grid_label">
+					2333
+				</p>
+			</a>
+			<a href="javascript:;" class="weui_grid js_grid" data-id="button">
+				<div class="weui_grid_label">
+					<img src="demos/images/icon_nav_actionSheet.png"/>
+				</div>
+				<p class="weui_grid_label">
+					2333
+				</p>
+			</a>
+		</div>
+		<a href="javascript:;" class="weui_btn weui_btn_primary">111</a>
+		<a href="javascript:;" class="weui_btn weui_btn_default">111</a>
+		<a href="javascript:;" class="weui_btn weui_btn_warn">111</a>
+		<a href="javascript:;" class="weui_btn weui_btn_plain_default">222</a>
+		<a href="javascript:;" class="weui_btn weui_btn_plain_primary">222</a>
+		<div class="button_sp_area">
+		<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_warn">333</a>
+		<a href="javascript:;" class="weui_btn weui_btn_mini weui_btn_primary">333</a>
+	</div>
+	<div class="weui_cells weui_cells_access">
+		<div class="weui_cell">
+			<div class="weui_cell_hd">
+				<img src="img/cf1b9d16fdfaaf510d0e3eec845494eef11f7af0.jpg" width="30"/>
+			</div>
+			<div class="weui_cell_bd weui_cell_primary">
+				<p>所属</p>
+			</div>
+			<div class="weui_cell_ft">
+				E F S F
+			</div>
+		</div>
+	</div>
+	<div class="weui_cells weui_cells_radio">
+		<label class="weui_cell weui_check_label">
+			<div class="weui_cell_bd weui_cell_primary">
+				<p>2333</p>
+			</div>
+			<div>
+				<input type="radio" class="weui_check" name="radio"/>
+				<span class="weui_icon_checked"></span>
+			</div>
+		</label>
+		<label class="weui_cell weui_check_label">
+			<div class="weui_cell_bd weui_cell_primary">
+				<p>666</p>
+			</div>
+			<div>
+				<input type="radio" class="weui_check" name="radio"/>
+				<span class="weui_icon_checked"></span>
+			</div>
+		</label>
+	</div>
+	<div class="weui_cells weui_cells_form">
+		<div class="weui_cell">
+		<div class="weui_cell_hd">
+			<label class="weui_label">型号</label>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<input type="tel" class="weui_input" placeholder="请输入"/>
+		</div>
+	</div>
+	<div class="weui_cell">
+		<div class="weui_cell_hd">
+			<label class="weui_label">检测</label>
+		</div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<input type="tel" class="weui_input" placeholder="请输入验证"/>
+		</div>
+		<div class="weui_cell_ft ">
+			<img src="demos/images/icon_nav_article.png" height="25"/>
+		</div>
+	</div>
+	<div class="weui_cell weui_cell_switch">
+		<div class="weui_cell_hd weui_cell_primary">接受协议</div>
+		<div class="weui_cell_ft">
+			<input class="weui_switch" type="checkbox" />
+		</div>
+	</div>
+	<div class="weui_cell">
+		<div class="weui_cell_hd"><label class="weui_label">日期</label></div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<input class="weui_input" type="date" />
+		</div>
+	</div>
+	<div class="weui_cell">
+		<div class="weui_cell_hd"><label class="weui_label">时间</label></div>
+		<div class="weui_cell_bd weui_cell_primary">
+			<input class="weui_input" type="datetime-local" />
+		</div>
+	</div>
+	<div class="weui_cell weui_cell_select">
+		<div class="weui_cell_bd weui_cell_primary">
+			<select class="weui_select" name="select1">
+				<option selected="selected" value="0">请选择</option>
+				<option value="1">ZN</option>
+				<option value="2">EF</option>
+			</select>
+		</div>
+	</div>
+	</div>
+	<div class="weui_cells_title">记录</div>
+	<div class="weui_cells weui_cells_form">
+		<div class="weui_cell">
+			<div class="weui_cell_bd weui_cell_primary">
+				<textarea class="weui_textarea" placeholder="请输入" rows="3"></textarea>
+				<div class="weui_textarea_counter"><span>0</span>/200</div>
+			</div>
+		</div>
+	</div>
+	<div class="weui_msg">
+		<div class="weui_icon_area"><i class="weui_icon_success weui_icon_msg"></i></div>
+		<div class="weui_text_area">
+			<h2 class="weui_msg_title">交易完成</h2>
+			<p class="weui_msg_desc">成功付款￥198</p>
+		</div>
+		
+		<div class="weui_opr_area">
+			<p class="weui_btn_area">
+				<a href="javascript:;" class="weui_btn weui_btn_primary rxo">确定</a>
+				<a href="javascript:;" class="weui_btn weui_btn_default">取消</a>
+			</p>
+		</div>
+		<script type="text/javascript">
+
+    $(function(){
+    	$(".rxo").click(function(){
+    		$.actions({
+  actions: [{
+    text: "编辑",
+    className:"red"+" "+"blue",
+    onClick: function() {
+      //do something
+    }
+  },{
+    text: "删除",
+    onClick: function() {
+      //do something
+    }
+  }]
+});
+    	})
+    })
+		</script>
+		<div class="weui_extra_area">
+			<a href="">查看详情</a>
+		</div>
+	</div>
+	<div class="weui_progress">
+		<div class="weui_progress_bar">
+			<div class="weui_progress_inner_bar js_progress" style="width: 20%;"></div>
+		</div>
+		<a href="javascript:;" class="weui_progress_opr">
+			<i class="weui_icon_cancel"></i>
+		</a>
+	</div>
+	<br />
+	<div class="weui_progress">
+  <div class="weui_progress_bar">
+    <div class="weui_progress_inner_bar js_progress" style="width: 50%;"></div>
+  </div>
+  <a href="javascript:;" class="weui_progress_opr">
+    <i class="weui_icon_cancel"></i>
+  </a>
+</div>
+<br>
+<div class="weui_progress">
+  <div class="weui_progress_bar">
+    <div class="weui_progress_inner_bar js_progress" style="width:80%;"></div>
+  </div>
+  <a href="javascript:;" class="weui_progress_opr">
+    <i class="weui_icon_cancel"></i>
+  </a>
+</div>
+<div class="weui_btn_area">
+	<a href="javascript:;" class="weui_btn weui_btn_primary">上传</a>
+</div>
+	</div>
+	<div class="weui_panel weui_panel_access">
+		<div class="weui_panel_hd">rx1</div>
+		<div class="weui_panel_bd">
+			<a href="javascript:;" class="weui_media_box weui_media_appmsg">
+				<div class="weui_media_hd">
+					<img src="img/09fa513d269759ee38f67394bafb43166c22dfce.jpg" width="50" />
+				</div>
+				<div class="weui_media_bd">
+					<h4 class="weui_media_title">矿物储量不族</h4>
+					<p class="weui_media_desc">矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族</p>
+				</div>
+			</a>
+			<a href="javascript:;" class="weui_media_box weui_media_appmsg">
+				<div class="weui_media_hd">
+					<img src="img/09fa513d269759ee38f67394bafb43166c22dfce.jpg" width="50" />
+				</div>
+				<div class="weui_media_bd">
+					<h4 class="weui_media_title">矿物储量不族</h4>
+					<p class="weui_media_desc">矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族</p>
+				</div>
+			</a>
+			<a href="javascript:;" class="weui_media_box weui_media_appmsg">
+				<div class="weui_media_hd">
+					<img src="img/09fa513d269759ee38f67394bafb43166c22dfce.jpg" width="50" />
+				</div>
+				<div class="weui_media_bd">
+					<h4 class="weui_media_title">矿物储量不族</h4>
+					<p class="weui_media_desc">矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族矿物储量不族</p>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="weui_panel">
+		<div class="weui_panel_hd">文字列表附来源</div>
+		<div class="weui_panel_bd">
+			<div class="weui_media_box weui_media_text">
+				<h4 class="weui_media_title">fish91</h4>
+				<p class="weui_media_desc">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</p>
+			<ul class="weui_media_info">
+				<li class="weui_media_info_meta">2333</li>
+				<li class="weui_media_info_meta">6666</li>
+				<li class="weui_media_info_meta">91</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div class="weui_panel">
+		<div class="weui_panel_hd">23333</div>
+		<div class="weui_panel_bd">
+			<div class="weui_media_box weui_media_small_appmsg">
+				<div class="weui_cells weui_cells_access">
+					<a class="weui_cell" href="javascript:;">
+						<div class="weui_cell_hd"><img src="img/cf1b9d16fdfaaf510d0e3eec845494eef11f7af0.jpg" width="40"></div>
+						<div class="weui_cell_bd weui_cell_primary">
+							<p>嗯哼</p>
+						</div>
+						<span class="weui_cell_ft"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+
+</html>
