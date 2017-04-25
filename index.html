@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
+	<style>
+		*{margin: 0px;padding: 0px;}
+		.carda{width: 200px;margin: 0px auto;}
+		.carda{
+		position: relative;
+		left: 0px;
+		top: 0px;
+		-webkit-animation: msz 3s infinite;
+		-moz-animation: msz 3s infinite;
+		animation: msz 3s infinite;
+		}
+		@-webkit-keyframes msz{
+			0%{left: 0px;top: 0px;-webkit-transform:rotateY(180deg);}
+			100%{left:0px;top: 0px;-webkit-transform:rotateY(0deg);}
+		}
+		.cardb{width: 200px;margin: 0px auto;z-index: 500;}
+		#card{margin-top: 20px;}
+		.bg{margin: 0px auto;background-image:url(img/Screenshot_2017-04-24-17-05-26-171_com.bilibili.f.png);width:800px;background-size: 100%;background-repeat: no-repeat;height: 460px;}
+		.btn{border: 1px solid;background-color: #E3D122;width: 120px;height: 50px;font-size: 18px;color: white;border-radius: 10px;font-family: "微软雅黑";}
+		#card{position: absolute;}
+		#zb{margin-top: 20px;z-index: 5000;position: absolute;height: 339px;width: 200px;background-size: 100%;background-repeat: no-repeat;}
+	</style>
+	<body>
+		<div class="bg" id="bg">
+		</div>
+		<div style="width: 100%;text-align: center;">
+			<button class="btn" onclick="fgock()">召唤x1次</button>
+		</div>
+		<!--<img src="img/6b9cb4d0f703918f70837099583d269758eec44b.jpg"/>-->
+	<script type="text/javascript">
+		function fgock(){
+			var bg=document.getElementById("bg")
+			bg.innerHTML="<div class='carda' id='bh'><img id='card' src='' width='200px'/><div id='zb'/></div></div>"
+			var img=document.getElementById("card")
+			var zb=document.getElementById("zb")
+			$('#card').rotate({animateTO:180});
+			zb.style.backgroundImage="url(img/6a6224d3572c11df63b5f2706a2762d0f603c2bd.jpg)"
+//			img.src="img/6b9cb4d0f703918f70837099583d269758eec44b.jpg"
+			setTimeout(function(){
+				var img=document.getElementById("card")
+				carda=document.getElementById("bh")
+				carda.className="cardb"
+				img.src="img/heizhende.jpg"
+				 $("#zb").animate({ 
+  				height: "0px", 
+  									}, 2000 );
+			},3000)
+		}
+	</script>
+	</body>
+</html>
